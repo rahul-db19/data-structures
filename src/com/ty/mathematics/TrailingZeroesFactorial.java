@@ -14,7 +14,7 @@ public class TrailingZeroesFactorial {
 		}
 		int count = 0;
 		
-		long factorial = fact(n);
+		long factorial = fact(n); //causes overflow 
 		System.out.println("Factorial is "+factorial);
 		while(factorial%10 == 0) {
 			count++;
