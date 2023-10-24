@@ -20,7 +20,7 @@ public class ComputePower {
 		else return temp*a;
 	}
 	public static void main(String[] args) {
-		System.out.println(compute1(13,4));
+		System.out.println(compute1(13,3));
 		System.out.println(compute2(13,4));
 	}
 
