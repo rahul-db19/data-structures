@@ -24,8 +24,25 @@ public class LeftMostNonRepeating {
         }
         return '$';
     }
+
+    public static int leftmostNonRepeatingCharacter(String str){
+        int[]count = new int[256];
+        int len = str.length();
+        for (int i = 0; i < str.length(); i++) {
+            count[str.charAt(i)]++;
+        }
+        for (int i = 0; i < str.length(); i++) {
+            if(count[str.charAt(i)]==1) return i;
+        }
+        return -1;
+    }
     public static void main(String[] args) {
-        String str = "hello";
+        String str = "hellohell";
         System.out.println(nonrepeatingCharacter(str));
+        if(leftmostNonRepeatingCharacter(str) == -1){
+            System.out.println("$");
+        } else{
+            System.out.println(str.charAt(leftmostNonRepeatingCharacter(str)));
+        }
     }
 }
