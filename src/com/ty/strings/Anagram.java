@@ -8,12 +8,12 @@ public class Anagram {
         String s2 = "listen";*/
 
         String s1 = "silence";
-        String s2 = "liccence";
+        String s2 = "license";
 
         int p = s1.length();
         int q = s2.length();
 
-        System.out.println(anagram(s1,s2,p,q));
+//        System.out.println(anagram(s1,s2,p,q));
         System.out.println(anagramEfficient(s1,s2,p,q));
     }
     static final int CHAR = 256;
