@@ -18,7 +18,7 @@ public class StringSum {
     }
 
     public static void main(String[] args) {
-        String str = "10abc20";
+        String str = "10abc200";
         System.out.println(findSum(str));
     }
 }
